@@ -1,16 +1,16 @@
-﻿plugins {
+plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
 }
 
 android {
-    namespace = "com.diegorojas.lanzadordados"
+    namespace = "com.diegoivanrojasavila.lanzadordados"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.diegorojas.lanzadordados"
+        applicationId = "com.diegoivanrojasavila.lanzadordados"
         minSdk = 29
         targetSdk = 37
         versionCode = 1

@@ -1,4 +1,4 @@
-﻿package com.diegorojas.lanzadordados.ui.theme
+package com.diegoivanrojasavila.lanzadordados.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
