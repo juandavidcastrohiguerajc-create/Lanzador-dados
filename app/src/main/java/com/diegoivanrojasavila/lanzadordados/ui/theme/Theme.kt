@@ -7,29 +7,28 @@ import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
+// esquema de colores claro
 private val EsquemaClaro = lightColorScheme(
-    primary = VerdeOscuro,
+    primary = AzulTurquesa,
     onPrimary = Color.White,
-    primaryContainer = VerdeClaro,
-    secondary = AzulPetroleo,
-    secondaryContainer = AzulPetroleoClaro,
-    tertiary = Dorado,
-    tertiaryContainer = DoradoClaro,
-    background = FondoClaro,
-    surface = FondoClaro
+    primaryContainer = AzulTurquesaClaro,
+    background = FondoBlanco,
+    surface = FondoBlanco,
+    onBackground = TextoOscuro,
+    onSurface = TextoOscuro
 )
 
+// esquema de colores oscuro
 private val EsquemaOscuro = darkColorScheme(
-    primary = VerdeNoche,
-    primaryContainer = VerdeNocheContenedor,
-    secondary = AzulNoche,
-    secondaryContainer = AzulNocheContenedor,
-    tertiary = DoradoNoche,
-    tertiaryContainer = DoradoNocheContenedor,
-    background = FondoOscuro,
-    surface = FondoOscuro
+    primary = AzulTurquesaNoche,
+    onPrimary = Color(0xFF003548),
+    background = FondoNoche,
+    surface = FondoNoche,
+    onBackground = TextoClaro,
+    onSurface = TextoClaro
 )
 
+// composable del tema principal
 @Composable
 fun LanzadorDadosTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
