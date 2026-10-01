@@ -4,14 +4,14 @@ plugins {
 }
 
 android {
-    namespace = "com.diegoivanrojasavila.lanzadordados"
+    namespace = "com.juandavidcastro.lanzadordados"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.diegoivanrojasavila.lanzadordados"
-        minSdk = 29
+        applicationId = "com.juandavidcastro.lanzadordados"
+        minSdk = 28
         targetSdk = 37
         versionCode = 1
         versionName = "1.0"

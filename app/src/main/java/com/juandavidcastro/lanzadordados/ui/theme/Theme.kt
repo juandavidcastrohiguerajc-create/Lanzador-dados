@@ -1,4 +1,4 @@
-package com.diegoivanrojasavila.lanzadordados.ui.theme
+package com.juandavidcastro.lanzadordados.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -7,7 +7,6 @@ import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
-// esquema de colores claro
 private val EsquemaClaro = lightColorScheme(
     primary = AzulTurquesa,
     onPrimary = Color.White,
@@ -18,7 +17,6 @@ private val EsquemaClaro = lightColorScheme(
     onSurface = TextoOscuro
 )
 
-// esquema de colores oscuro
 private val EsquemaOscuro = darkColorScheme(
     primary = AzulTurquesaNoche,
     onPrimary = Color(0xFF003548),
@@ -28,7 +26,6 @@ private val EsquemaOscuro = darkColorScheme(
     onSurface = TextoClaro
 )
 
-// composable del tema principal
 @Composable
 fun LanzadorDadosTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),

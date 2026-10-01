@@ -1,4 +1,4 @@
-package com.diegoivanrojasavila.lanzadordados
+package com.juandavidcastro.lanzadordados
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -32,9 +32,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.diegoivanrojasavila.lanzadordados.ui.theme.LanzadorDadosTheme
+import com.juandavidcastro.lanzadordados.ui.theme.LanzadorDadosTheme
 
-// actividad principal de la aplicacion
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,7 +51,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-// vista previa de la aplicacion
 @Preview(showBackground = true)
 @Composable
 fun LanzadorDadosApp() {
@@ -64,12 +62,10 @@ fun LanzadorDadosApp() {
     )
 }
 
-// composable que gestiona la imagen del dado y el boton de lanzamiento
 @Composable
 fun DadoConBotonEImagen(modifier: Modifier = Modifier) {
     var resultado by remember { mutableIntStateOf(1) }
 
-    // seleccion del recurso de imagen segun el resultado
     val imagen = when (resultado) {
         1 -> R.drawable.dice_1
         2 -> R.drawable.dice_2
